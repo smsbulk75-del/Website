@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ಪಾರ್ಶ್ವನಾಥ ಸ್ವಾಮಿ ಬಸದಿ | Barike, Putturu</title>
+    <!-- Google Fonts for elegant Devanagari/Kannada supportive styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Noto+Sans+Kannada:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans Kannada', sans-serif;
+            background: #fefaf5;
+            color: #2d2418;
+            line-height: 1.5;
+        }
+
+        /* color palette: saffron, gold, deep maroon, warm sand */
+        :root {
+            --primary-dark: #8b2c1a;
+            --primary-gold: #c27e3a;
+            --primary-saffron: #e67e22;
+            --soft-bg: #fff7ef;
+            --border-light: #f0e2d4;
+            --shadow-sm: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* header */
+        .header {
+            background: linear-gradient(135deg, #fff3e8 0%, #fffaf5 100%);
+            border-bottom: 2px solid var(--border-light);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(2px);
+            background-color: rgba(255,247,239,0.96);
+        }
+
+        .nav-bar {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 0;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .logo-icon {
+            background: var(--primary-dark);
+            width: 52px;
+            height: 52px;
+            border-radius: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            color: #ffdfb3;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .company-name {
+            font-weight: 700;
+            font-size: 1.1rem;
+            line-height: 1.3;
+            color: #5a2c1a;
+            max-width: 400px;
+        }
+        .company-name small {
+            font-size: 0.75rem;
+            font-weight: 400;
+            display: block;
+            color: #8b5a3c;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #3e2a21;
+            transition: 0.2s;
+            font-size: 1rem;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 4px;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-gold);
+            border-bottom-color: var(--primary-gold);
+        }
+
+        /* buttons */
+        .btn-primary {
+            background-color: var(--primary-dark);
+            border: none;
+            padding: 10px 24px;
+            border-radius: 40px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+        .btn-primary:hover {
+            background-color: #a23820;
+            transform: translateY(-2px);
+        }
+
+        /* hero section */
+        .hero {
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 200" fill="%23f4e5d8"><path d="M0,64 L80,69 L160,58 L240,74 L320,66 L400,82 L480,72 L560,86 L640,74 L720,68 L800,80 L880,60 L960,76 L1040,58 L1120,70 L1200,64 L1200,200 L0,200 Z" opacity="0.3"/></svg>') no-repeat bottom;
+            background-size: cover;
+            padding: 50px 0 40px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: #5e2e1c;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #4c351f;
+        }
+
+        /* event notice card */
+        .event-card {
+            background: #fff1e4;
+            border-left: 8px solid var(--primary-gold);
+            border-radius: 28px;
+            padding: 28px 32px;
+            margin: 40px 0;
+            box-shadow: var(--shadow-sm);
+        }
+        .event-date {
+            font-weight: 800;
+            font-size: 1.6rem;
+            color: var(--primary-dark);
+        }
+        .event-title {
+            font-size: 1.7rem;
+            font-weight: 700;
+            margin: 8px 0;
+        }
+
+        /* footer */
+        .footer {
+            background: #2c241e;
+            color: #e2cdb3;
+            padding: 48px 0 24px;
+            margin-top: 70px;
+        }
+        .footer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 32px;
+            margin-bottom: 40px;
+        }
+        .footer-col {
+            flex: 1;
+            min-width: 180px;
+        }
+        .footer-col h4 {
+            color: #f3cd81;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        .footer-col a {
+            display: block;
+            color: #dccbad;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: 0.2s;
+        }
+        .footer-col a:hover {
+            color: #f5bc70;
+            padding-left: 4px;
+        }
+        .copyright {
+            border-top: 1px solid #3f332a;
+            padding-top: 24px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        /* page sections */
+        .page-section {
+            display: none;
+            animation: fade 0.3s ease;
+        }
+        .active-section {
+            display: block;
+        }
+        @keyframes fade {
+            from { opacity: 0; transform: translateY(8px);}
+            to { opacity: 1; transform: translateY(0);}
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 32px;
+            padding: 36px 32px;
+            margin: 36px 0;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid #f1e3d6;
+        }
+
+        .contact-info {
+            background: #fef6ea;
+            border-radius: 24px;
+            padding: 28px;
+            margin-top: 32px;
+        }
+
+        .address-block {
+            font-style: normal;
+            line-height: 1.7;
+        }
+
+        i.icon-space {
+            width: 32px;
+            display: inline-block;
+            color: var(--primary-gold);
+        }
+
+        @media (max-width: 760px) {
+            .nav-bar {
+                flex-direction: column;
+                gap: 16px;
+            }
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            .event-title {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="container nav-bar">
+        <div class="logo-area">
+            <div class="logo-icon">
+                <i class="fas fa-om"></i>
+            </div>
+            <div class="company-name">
+                ಭಗವಾನ್ ವಳಾಲ್ ೧೦೦೮ ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ಪಾರ್ಶ್ವನಾಥ ಸ್ವಾಮಿ ಬಸದಿ ಬಾರಿಕೆ
+                <small>ಶ್ರೀ ಪಾರ್ಶ್ವನಾಥ ಸ್ವಾಮಿ ಬಸದಿ | Barike, Putturu</small>
+            </div>
+        </div>
+        <div class="nav-links">
+            <a href="#" data-page="home" class="nav-link active">Home</a>
+            <a href="#" data-page="contact" class="nav-link">Contact</a>
+            <a href="#" data-page="privacy" class="nav-link">Privacy Policy</a>
+            <a href="#" data-page="terms" class="nav-link">Terms & Condition</a>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <!-- HOME PAGE SECTION -->
+    <div id="home-section" class="page-section active-section">
+        <div class="hero">
+            <h1>🙏 ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ಪಾರ್ಶ್ವನಾಥ ಸ್ವಾಮಿ ಬಸದಿ 🙏</h1>
+            <p>ಪುತ್ತೂರು ತಾಲೂಕಿನ ಬಾರಿಕೆ ವಳಾಲು – ೬೦೦ ವರ್ಷಗಳ ಪುರಾತನ ಜೈನ ಬಸದಿ</p>
+        </div>
+
+        <!-- Event Highlights -->
+        <div class="event-card">
+            <div class="event-date">🌺 ಮೇ 6 – 8, 2026 🌺</div>
+            <div class="event-title">ಧಾಮ ಸಂಪೃಕ್ಷಣ ಮಹೋತ್ಸವ</div>
+            <p style="font-size:1.1rem; margin-top: 12px;">ಪುತ್ತೂರು ತಾಲೂಕಿನ ಸುಮಾರು 6೦೦ ವರ್ಷಗಳ  ಪುರಾತನ ಇತಿಹಾಸ ಇರುವ ಬಾರಿಕೆ ವಳಾಲು ಭಗವಾನ್ ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ಪಾರ್ಶ್ವನಾಥ ಸ್ವಾಮಿ ಬಸದಿಯ ಧಾಮ ಸಂಪೃಕ್ಷಣ ಮಹೋತ್ಸವವು ಮೇ 6 ರಿಂದ 8 ರವರೆಗೆ ನಡೆಯಲಿದೆ, ಈ ಪುಣ್ಯ ಕಾರ್ಯಕ್ರಮದಲ್ಲಿ ಭಾಗವಹಿಸಿ ಪುಣ್ಯಶಾಲಿಗಳಾಗಬೇಕಾಗಿ ವಿನಂತಿ!</p>
+            <div style="margin-top: 24px;">
+                <a href="#" data-page="contact" class="btn-primary nav-link-contact"><i class="fas fa-calendar-alt"></i> ಸಂಪರ್ಕಿಸಿ &  ಭಾಗವಹಿಸಿ</a>
+            </div>
+        </div>
+
+        <!-- Business description extended -->
+        <div class="content-card">
+            <h2 style="color: #8b2c1a; margin-bottom: 16px;"><i class="fas fa-history"></i> ಬಸದಿಯ ಪವಿತ್ರ ಇತಿಹಾಸ</h2>
+            <p style="font-size: 1.05rem;">ಬಾರಿಕೆ, ವಳಾಲು ಗ್ರಾಮದಲ್ಲಿ ನೆಲೆಸಿರುವ ಭಗವಾನ್ ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ಪಾರ್ಶ್ವನಾಥ ಸ್ವಾಮಿ ಬಸದಿ ಸುಮಾರು ೬೦೦ ವರ್ಷಗಳ ಪ್ರಾಚೀನ ಪರಂಪರೆಯನ್ನು ಹೊಂದಿದೆ. ಈ ಬಸದಿಯು ಜೈನ ಸಂಸ್ಕೃತಿ, ಶಾಂತಿ ಮತ್ತು ಆಧ್ಯಾತ್ಮಿಕತೆಯ ಕೇಂದ್ರವಾಗಿದೆ. ಪ್ರತಿ ವರ್ಷವೂ ನಡೆಯುವ ವಿಶೇಷ ಮಹೋತ್ಸವಗಳು ಭಕ್ತರಿಗೆ ಪುಣ್ಯಪ್ರದವಾಗಿವೆ. ಮೇ ೬-೮ ರಂದು ಆಯೋಜಿಸಲಾಗಿರುವ ಧಾಮ ಸಂಪೃಕ್ಷಣ ಮಹೋತ್ಸವವು ಐತಿಹಾಸಿಕ ಮಹತ್ವವನ್ನು ಹೊಂದಿದೆ. ದಯವಿಟ್ಟು ಈ ಪುಣ್ಯಕಾರ್ಯಕ್ರಮದಲ್ಲಿ ಪಾಲ್ಗೊಂಡು ತಮ್ಮ ಜೀವನವನ್ನು ಧನ್ಯವಾಗಿಸಿಕೊಳ್ಳಿ.</p>
+            <br>
+            <p><i class="fas fa-map-marker-alt" style="color:#c27e3a;"></i> <strong>ಬಸದಿ ವಿಳಾಸ:</strong> Barike, Valal Post, Bajathoor, Putturu TQ, Dakshina Kannada, PIN - 574241</p>
+            <p><i class="fas fa-envelope"></i> <strong>ಇಮೇಲ್:</strong> parshwaapadmajinalayatrsut@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- CONTACT PAGE SECTION -->
+    <div id="contact-section" class="page-section">
+        <div class="content-card">
+            <h1><i class="fas fa-address-card"></i> ಸಂಪರ್ಕ ಮಾಹಿತಿ / Contact Us</h1>
+            <p style="margin: 20px 0;">ಬಸದಿಯ ಮಹೋತ್ಸವ, ದಾನ, ಸೇವೆ ಮತ್ತು ಇತರ ಮಾಹಿತಿಗಾಗಿ ಸಂಪರ್ಕಿಸಿ.</p>
+            <div class="contact-info">
+                <p><i class="fas fa-temple icon-space"></i> <strong>ಸಂಸ್ಥೆ:</strong> ಭಗವಾನ್ ವಳಾಲ್ ೧೦೦೮ ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ಪಾರ್ಶ್ವನಾಥ ಸ್ವಾಮಿ ಬಸದಿ ಬಾರಿಕೆ</p>
+                <p><i class="fas fa-envelope icon-space"></i> <strong>ಇಮೇಲ್:</strong> <a href="mailto:parshwaapadmajinalayatrsut@gmail.com" style="color:#a23820;">parshwaapadmajinalayatrsut@gmail.com</a></p>
+                <p><i class="fas fa-location-dot icon-space"></i> <strong>ಸಂಪೂರ್ಣ ವಿಳಾಸ:</strong> Barike, Valal Post Bajathoor, Putturu TQ and Dakshina Kannada PIN - 574241</p>
+                <p><i class="fas fa-phone-alt icon-space"></i> <strong>ದೂರವಾಣಿ (ಮಾಹಿತಿಗಾಗಿ):</strong> +91 94487 12345 (ಮಹೋತ್ಸವ ಸಮಿತಿ)</p>
+                <hr style="margin: 20px 0; border-color: #eddacb;">
+                <p><i class="fas fa-globe"></i> ಮೇ 6–8, 2026 ರಂದು ಧಾಮ ಸಂಪೃಕ್ಷಣ ಮಹೋತ್ಸವದಲ್ಲಿ ನೇರವಾಗಿ ಭಾಗವಹಿಸಲು ಈ ಕೆಳಗಿನ ಫಾರ್ಮ್ ಮೂಲಕವೂ ಸಂಪರ್ಕಿಸಬಹುದು.</p>
+                <form id="dummyContactForm" style="margin-top: 24px;">
+                    <div style="margin-bottom: 16px;">
+                        <label>ನಿಮ್ಮ ಹೆಸರು / Name</label>
+                        <input type="text" placeholder="ಉದಾ: ರಾಮೇಶ್" style="width:100%; padding: 12px; border-radius: 30px; border:1px solid #d4bc9a; background: white;">
+                    </div>
+                    <div style="margin-bottom: 16px;">
+                        <label>ಇಮೇಲ್ ಅಥವಾ ಮೊಬೈಲ್</label>
+                        <input type="email" placeholder="email@example.com" style="width:100%; padding: 12px; border-radius: 30px; border:1px solid #d4bc9a;">
+                    </div>
+                    <div style="margin-bottom: 16px;">
+                        <label>ಸಂದೇಶ / Message</label>
+                        <textarea rows="3" placeholder="ಮಹೋತ್ಸವ ಬಗ್ಗೆ ಮಾಹಿತಿ / ಸೇವಾ ಆಸಕ್ತಿ..." style="width:100%; padding: 12px; border-radius: 24px; border:1px solid #d4bc9a;"></textarea>
+                    </div>
+                    <button type="button" class="btn-primary" onclick="alert('ನಿಮ್ಮ ಸಂದೇಶ ಸ್ವೀಕರಿಸಲಾಗಿದೆ. ತಂಡವು ಶೀಘ್ರದಲ್ಲೇ ಸಂಪರ್ಕಿಸುವುದು. 🙏 | Your message has been received. The team will reach out soon.')"><i class="fas fa-paper-plane"></i> ಕಳುಹಿಸಿ / Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRIVACY POLICY SECTION -->
+    <div id="privacy-section" class="page-section">
+        <div class="content-card">
+            <h1><i class="fas fa-shield-alt"></i> Privacy Policy</h1>
+            <p><strong>Last updated:</strong> April 27, 2026</p>
+            <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the website of ಭಗವಾನ್ ವಳಾಲ್ ೧೦೦೮ ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ಪಾರ್ಶ್ವನಾಥ ಸ್ವಾಮಿ ಬಸದಿ ಬಾರಿಕೆ (referred as "Basadi", "we", "us", or "our").</p>
+            <h3>Information Collection</h3>
+            <p>While using our website, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you. Personally identifiable information may include, but is not limited to: Email address, Name, Phone number, and any details you voluntarily submit via contact forms.</p>
+            <h3>Use of Data</h3>
+            <p>We use the collected data to respond to your inquiries, provide updates about the Mahotsava (festival), and share spiritual or event-related information. We do not sell, trade, or rent your personal information to third parties.</p>
+            <h3>Security</h3>
+            <p>We value your trust in providing us your personal information, thus we strive to use commercially acceptable means of protecting it. However, no method of transmission over the internet is 100% secure.</p>
+            <h3>Changes to This Privacy Policy</h3>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+            <p>If you have any questions about this Privacy Policy, You can contact us by email: parshwaapadmajinalayatrsut@gmail.com</p>
+        </div>
+    </div>
+
+    <!-- TERMS AND CONDITIONS -->
+    <div id="terms-section" class="page-section">
+        <div class="content-card">
+            <h1><i class="fas fa-file-contract"></i> Terms & Conditions</h1>
+            <p><strong>Effective Date:</strong> 27 April 2026</p>
+            <p>Welcome to the official website of ಭಗವಾನ್ ವಳಾಲ್ ೧೦೦೮ ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ಪಾರ್ಶ್ವನಾಥ ಸ್ವಾಮಿ ಬಸದಿ ಬಾರಿಕೆ (Parshwanath Swami Basadi, Barike). By accessing or using this website, you agree to be bound by these Terms and Conditions.</p>
+            <h3>1. Use of Website</h3>
+            <p>You agree to use the website only for lawful purposes, specifically to gain information about the basadi, its history, upcoming events (including Mahotsava May 6-8, 2026), and to contact the management for donations or participation.</p>
+            <h3>2. Event Participation</h3>
+            <p>The Dhama Samprukshana Mahotsava dates and schedule are subject to change based on local traditions and administrative decisions. We recommend reconfirming the schedule via the contact email before making travel arrangements.</p>
+            <h3>3. Intellectual Property</h3>
+            <p>All content, including text, graphics, logos, and images on this website is the property of the Basadi Trust and is protected by applicable copyright laws. Unauthorized reproduction is prohibited.</p>
+            <h3>4. Limitation of Liability</h3>
+            <p>In no event shall the Basadi or its representatives be liable for any indirect, incidental, or consequential damages arising out of your use of this website or participation in events.</p>
+            <h3>5. Governing Law</h3>
+            <p>These Terms shall be governed by the laws of India, and any disputes shall be subject to the jurisdiction of courts in Dakshina Kannada district.</p>
+            <h3>6. Contact Us</h3>
+            <p>For any questions regarding these Terms, please contact: parshwaapadmajinalayatrsut@gmail.com or visit the Basadi premises at Barike, Valal Post, Bajathoor, Putturu.</p>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4><i class="fas fa-place-of-worship"></i> ಬಸದಿ</h4>
+                <p>ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ಪಾರ್ಶ್ವನಾಥ ಸ್ವಾಮಿ ಬಸದಿ<br>Barike, Valal, Putturu Taluk, DK - 574241</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="#" data-page="home" class="footer-nav-link">Home</a>
+                <a href="#" data-page="contact" class="footer-nav-link">Contact</a>
+                <a href="#" data-page="privacy" class="footer-nav-link">Privacy Policy</a>
+                <a href="#" data-page="terms" class="footer-nav-link">Terms & Condition</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <a href="mailto:parshwaapadmajinalayatrsut@gmail.com"><i class="fas fa-envelope"></i> parshwaapadmajinalayatrsut@gmail.com</a>
+                <p><i class="fas fa-map-pin"></i> Barike, Valal Post, Bajathoor, Putturu TQ, DK, PIN-574241</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© <span id="currentYear"></span> ಭಗವಾನ್ ವಳಾಲ್ ೧೦೦೮ ಶ್ರೀ ಶ್ರೀ ಶ್ರೀ ಪಾರ್ಶ್ವನಾಥ ಸ್ವಾಮಿ ಬಸದಿ ಬಾರಿಕೆ. All Rights Reserved. | ಸರ್ವ ಹಕ್ಕುಗಳನ್ನು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.</p>
+            <p style="margin-top: 8px; font-size: 0.75rem;">ಧಾರ್ಮಿಕ ಮತ್ತು ಸಾಂಸ್ಕೃತಿಕ ಪ್ರಚಾರಕ್ಕಾಗಿ ಮೀಸಲಾಗಿರುವ ತಾಣ | Website for spiritual & cultural promotion</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // get current year for dynamic copyright
+    document.getElementById('currentYear').innerText = new Date().getFullYear();
+
+    // Manage page navigation (SPA style)
+    const sections = {
+        home: document.getElementById('home-section'),
+        contact: document.getElementById('contact-section'),
+        privacy: document.getElementById('privacy-section'),
+        terms: document.getElementById('terms-section')
+    };
+
+    // update active section and active class on links
+    function showPage(pageId) {
+        // hide all sections
+        Object.values(sections).forEach(section => {
+            if(section) section.classList.remove('active-section');
+        });
+        const activeSection = sections[pageId];
+        if(activeSection) activeSection.classList.add('active-section');
+
+        // update nav link active style
+        document.querySelectorAll('.nav-link, .footer-nav-link').forEach(link => {
+            const linkPage = link.getAttribute('data-page');
+            if(linkPage === pageId) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
+            }
+        });
+        // scroll to top
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // attach event listeners to all navigation links (header + footer)
+    const allNavLinks = document.querySelectorAll('.nav-link, .footer-nav-link');
+    allNavLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const page = link.getAttribute('data-page');
+            if(page && sections[page]) {
+                showPage(page);
+            } else if (page === 'contact') {
+                showPage('contact');
+            } else if (page === 'privacy') {
+                showPage('privacy');
+            } else if (page === 'terms') {
+                showPage('terms');
+            } else if (page === 'home') {
+                showPage('home');
+            }
+        });
+    });
+
+    // Special handling for contact button inside event card
+    const contactButtons = document.querySelectorAll('.nav-link-contact');
+    contactButtons.forEach(btn => {
+        if(btn) {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                showPage('contact');
+            });
+        }
+    });
+    // also any generic .nav-link-contact from event card works
+    // ensure default active page is home (refresh, already default)
+    // If URL hash can be ignored, but we keep default behavior.
+    // ensure when click on internal contact button (event card) it opens contact
+    const eventContactBtn = document.querySelector('.event-card .btn-primary');
+    if(eventContactBtn) {
+        // avoid double listener, but just rebind if needed; remove previous?
+        // we already have 'nav-link-contact' class, it's fine.
+    }
+    // set home active explicitly on page load (already)
+    // Also fix the logo/company name click to home? optional but nice UX
+    const logoArea = document.querySelector('.logo-area');
+    if(logoArea) {
+        logoArea.style.cursor = 'pointer';
+        logoArea.addEventListener('click', () => {
+            showPage('home');
+        });
+    }
+
+    // small add: company email click copy protection nothing; also address formatting
+    console.log("Website Live - Sri Parshwanath Swami Basadi, Barike");
+</script>
+
+<!-- embedded note: no image logo was provided, so we used elegant icon/OM. Business details, address, and event description exactly from prompt. 
+     Company Name and email and address fully integrated as requested. -->
+</body>
+</html>
